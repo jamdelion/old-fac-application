@@ -3,9 +3,11 @@ body {
 }
 
 #main {
-  width: 1360px;
-  margin: 0 auto 40px;
+  height: 100vw;
+  top: 0;
+  margin-left: 4vw;
   background-color: #ffe77f;
+  position: static;
 }
 
 #second-box {
@@ -13,15 +15,15 @@ body {
 }
 
 #third-box {
-  background-color: #abfcbd;
+  background-color: lightskyblue;
 }
 
 #fourth-box {
-  background-color: #ffb642;
+  background-color: orange;
 }
 
 #bottom-box {
-  background-color: black;
+  background-color: #150e60;
 }
 
 #bottom-box h3 {
@@ -30,6 +32,15 @@ body {
 
 #side-nav-bar {
   float: left;
+  width: 4vw;
+  height: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: black;
+  display: flex;
+  align-content: center;
+  z-index: 1;
 }
 
 section {
