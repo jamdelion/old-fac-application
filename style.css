@@ -1,3 +1,51 @@
 body {
   font-family: Helvetica, Arial, sans-serif;
 }
+
+#main {
+  width: 1360px;
+  margin: 0 auto 40px;
+  background-color: #ffe77f;
+}
+
+#second-box {
+  background-color: #fca6ca;
+}
+
+#third-box {
+  background-color: #abfcbd;
+}
+
+#fourth-box {
+  background-color: #ffb642;
+}
+
+#bottom-box {
+  background-color: black;
+}
+
+#bottom-box h3 {
+  color: white;
+}
+
+#side-nav-bar {
+  float: left;
+}
+
+section {
+  padding: 0;
+}
+
+h1 {
+  font-family: 'Ceviche One', cursive;
+  text-transform: uppercase;
+  font-size: 5em;
+  margin: 0 auto;
+  color: black;
+}
+
+h3 {
+  font-family: 'Ceviche One', cursive;
+  text-transform: uppercase;
+  font-size: 4em;
+}
