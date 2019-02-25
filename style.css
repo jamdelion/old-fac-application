@@ -53,6 +53,7 @@ body {
   position: relative;
   width: 100%;
   display: flex;
+  padding: 20% 20%;
   }
 
 
@@ -68,8 +69,44 @@ h1 {
   color: black;
 }
 
+#main-title {
+  padding: 10% 10% 1% 10%;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  display: flex;
+}
+
+#sub-title {
+  padding: 1% 1% 10% 1%;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  display: flex;
+}
+
 h3 {
   font-family: 'Ceviche One', cursive;
   text-transform: uppercase;
   font-size: 4em;
+  padding: 1%;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  display: flex;
+}
+
+#top-section-links {
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  display: flex;
+}
+
+a {
+  padding: 0.3em;
 }
