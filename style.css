@@ -48,7 +48,6 @@ sepaaate these by category (a, body etc), divs...classes*/
   background-color: black;
   display: flex;
   align-content: center;
-  z-index: 1;
 }
 
 #side-bar-links {
