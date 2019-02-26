@@ -12,7 +12,9 @@ body {
   width: 100%;
 }
 
-/* set minumums for height problem */
+/* set minumums for height problem
+
+sepaaate these by category (a, body etc), divs...classes*/
 
 #second-box {
   background-color: #fca6ca;
@@ -113,4 +115,25 @@ h3 {
 
 a {
   padding: 0.3em;
+}
+
+.white {
+  color: white;
+}
+
+#ext-links-content {
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+#freecodecampicon {
+  transition: color 0.7s ease;
+}
+
+#freecodecampicon:hover {
+  color: orange;
 }
