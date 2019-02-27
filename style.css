@@ -139,14 +139,11 @@ a {
 }
 
 #codewarsicon {
-  transition: color 0.7s ease;
-  width: 70px;
-  height: 70px;
+  fill: orange;
+  width: 2.7em;
+  height: 2.7em;
 }
 
-#codewarsicon:hover {
-  color: orange;
-}
 
 
 .white {
