@@ -138,6 +138,16 @@ a {
   color: orange;
 }
 
+#codewarsicon {
+  transition: color 0.7s ease;
+  width: 70px;
+  height: 70px;
+}
+
+#codewarsicon:hover {
+  color: orange;
+}
+
 
 .white {
   color: white;
