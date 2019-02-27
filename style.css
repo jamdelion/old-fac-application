@@ -2,6 +2,35 @@ body {
   font-family: Helvetica, Arial, sans-serif;
 }
 
+section {
+  padding: 0;
+}
+
+h1 {
+  font-family: Arial, cursive;
+  text-transform: uppercase;
+  font-size: 5em;
+  margin: 0 auto;
+  color: black;
+}
+
+h3 {
+  font-family: Arial, cursive;
+  text-transform: uppercase;
+  font-size: 4em;
+  padding: 1%;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  display: flex;
+}
+
+a {
+  padding: 0.3em;
+}
+
+
 #main {
   height: 100vw;
   display: flex;
@@ -12,9 +41,7 @@ body {
   width: 100%;
 }
 
-/* set minumums for height problem
-
-sepaaate these by category (a, body etc), divs...classes*/
+/* set minumums for height problem*/
 
 #second-box {
   background-color: #fca6ca;
@@ -38,7 +65,6 @@ sepaaate these by category (a, body etc), divs...classes*/
   color: white;
 }
 
-
 #side-nav-bar {
   float: left;
   width: 4em;
@@ -61,19 +87,6 @@ sepaaate these by category (a, body etc), divs...classes*/
   padding: 20% 20%;
   }
 
-
-section {
-  padding: 0;
-}
-
-h1 {
-  font-family: 'Ceviche One', cursive;
-  text-transform: uppercase;
-  font-size: 5em;
-  margin: 0 auto;
-  color: black;
-}
-
 #main-title {
   padding: 10% 10% 1% 10%;
   justify-content: center;
@@ -92,32 +105,12 @@ h1 {
   display: flex;
 }
 
-h3 {
-  font-family: 'Ceviche One', cursive;
-  text-transform: uppercase;
-  font-size: 4em;
-  padding: 1%;
-  justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
-  align-items: center;
-  display: flex;
-}
-
 #top-section-links {
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
   align-items: center;
   display: flex;
-}
-
-a {
-  padding: 0.3em;
-}
-
-.white {
-  color: white;
 }
 
 #ext-links-content {
@@ -135,4 +128,8 @@ a {
 
 #freecodecampicon:hover {
   color: orange;
+}
+
+.white {
+  color: white;
 }
