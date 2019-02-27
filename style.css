@@ -19,11 +19,11 @@ h3 {
   text-transform: uppercase;
   font-size: 4em;
   padding: 1%;
+  display: flex;
   justify-content: center;
+  align-items: center;
   margin-left: auto;
   margin-right: auto;
-  align-items: center;
-  display: flex;
 }
 
 a {
@@ -78,48 +78,48 @@ a {
 
 #side-bar-links {
   top: 18%; /*-delete this? */
-  justify-content: center;
+  display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   position: relative;
   width: 100%;
-  display: flex;
   padding: 20% 20%;
   }
 
 #main-title {
   padding: 10% 10% 1% 10%;
+  display: flex;
   justify-content: center;
+  align-items: center;
   margin-left: auto;
   margin-right: auto;
-  align-items: center;
-  display: flex;
 }
 
 #sub-title {
   padding: 1% 1% 10% 1%;
+  display: flex;
   justify-content: center;
+  align-items: center;
   margin-left: auto;
   margin-right: auto;
-  align-items: center;
-  display: flex;
 }
 
 #top-section-links {
+  display: flex;
   justify-content: center;
+  align-items: center;
   margin-left: auto;
   margin-right: auto;
-  align-items: center;
-  display: flex;
 }
 
 #ext-links-content {
   margin-left: auto;
   margin-right: auto;
-  justify-content: center;
-  align-items: center;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #freecodecampicon {
@@ -129,6 +129,15 @@ a {
 #freecodecampicon:hover {
   color: orange;
 }
+
+#githubicon {
+  transition: color 0.7s ease;
+}
+
+#githubicon:hover {
+  color: orange;
+}
+
 
 .white {
   color: white;
