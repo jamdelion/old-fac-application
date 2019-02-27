@@ -144,6 +144,11 @@ a {
   height: 2.7em;
 }
 
+#downward-arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 
 .white {
