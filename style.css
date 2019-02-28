@@ -28,8 +28,12 @@ h3 {
   margin-right: auto;
 }
 
+
+
 a {
   padding: 0.3em;
+  text-decoration: none;
+  color: black;
 }
 
 svg {
@@ -43,6 +47,11 @@ svg path {
 
 svg:hover path {
   fill: orange;
+}
+
+/* this scroll will not work on iOS on movile, or IE/Edge/Safari..fix? */
+html {
+  scroll-behavior: smooth;
 }
 
 #main {
@@ -162,6 +171,12 @@ svg:hover path {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: transform 0.7s ease;
+  color: white;
+}
+
+#downward-arrow:hover {
+  transform: translate(0px, 20px);
 }
 
 .white {
