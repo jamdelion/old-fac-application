@@ -210,3 +210,11 @@ p {
 .white {
   color: white;
 }
+
+.side-icon {
+  transition: color 0.7s ease;
+}
+
+.side-icon:hover {
+  color: orange;
+}
