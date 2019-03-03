@@ -207,6 +207,28 @@ p {
   transform: scale(1.2, 1.2);
 }
 
+#about-me-boxes {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.box {
+  width: 285px;
+  height: 350px;
+  border-right: solid black;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.box4 {
+  width: 285px;
+  height: 350px;
+  padding: 10px;
+}
+
+
 .white {
   color: white;
 }
