@@ -220,14 +220,30 @@ p {
   border-right: solid black;
   padding: 10px;
   margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .box4 {
   width: 285px;
   height: 350px;
   padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
+.keyword {
+  font-weight: bold;
+  padding: 10px 10px;
+}
+
+.about-me-imgs {
+  border-radius: 45%;
+  max-height: 170px;
+  width: auto;
+}
 
 .white {
   color: white;
