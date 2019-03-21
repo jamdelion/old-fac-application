@@ -2,6 +2,8 @@
   "use strict";
 
 
+
+
   HTMLElement.prototype.show = function(){
     this.style.display = "";
   };
@@ -19,7 +21,6 @@
   };
 
 
-
   //on load
   function init() {
     var extendBox1 = document.getElementById("box1-extended");
@@ -31,7 +32,6 @@
     var box2 = document.getElementById("box2");
     var box3 = document.getElementById("box3");
     var box4 = document.getElementById("box4");
-
     //when click each box button
     var buttonBox1 = document.getElementById("button-box1");
     buttonBox1.onclick = function(){
@@ -51,8 +51,15 @@
       box2.toggle();
       box3.toggle();
     }
+    //test to see if toggling images works - need to cycle round carousel
+    var imghold1 = document.getElementById("img-hold-1");
+    var nextButton = document.getElementById("next-icon");
+    nextButton.onclick = function(){
+      imghold1.toggle();
+    }
+
   }
-  //do this for all the other boxes
+
 
   //on start , init function executes
   document.addEventListener("DOMContentLoaded", init);
