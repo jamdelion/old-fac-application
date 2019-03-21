@@ -11,7 +11,7 @@ h1 {
   font-family: 'Macondo Swash Caps', cursive;
   font-weight: bold;
   text-transform: uppercase;
-  font-size: 8em;
+  font-size: 10em;
   margin: 0 auto;
   color: black;
 }
@@ -127,7 +127,7 @@ p {
 }
 
 #main-title {
-  padding: 10% 10% 1% 10%;
+  padding: 15% 10% 1% 10%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -136,7 +136,7 @@ p {
 }
 
 #sub-title {
-  padding: 1% 1% 10% 1%;
+  padding: 1% 1% 12% 1%;
   display: flex;
   justify-content: center;
   align-items: center;
