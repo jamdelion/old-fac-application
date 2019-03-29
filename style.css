@@ -232,6 +232,13 @@ p {
   align-items: center;
 }
 
+.box-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 285px;
+}
+
 .box4 {
   width: 285px;
   height: 350px;
@@ -347,12 +354,12 @@ p {
 }
 
 .wide-box {
-  width: 570px;
+  width: 855px;
   height: 350px;
   border-right: solid black;
   padding: 10px;
   margin-bottom: 20px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
