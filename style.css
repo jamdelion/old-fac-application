@@ -363,3 +363,13 @@ p {
   justify-content: flex-start;
   align-items: flex-start;
 }
+
+.wide-box-reverse {
+  width: 855px;
+  height: 350px;
+  padding: 10px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}

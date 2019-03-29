@@ -29,25 +29,32 @@
     extendBox1.hide();
     extendBox2.hide();
     extendBox4.hide();
+    var box1 = document.getElementById("box1");
     var box2 = document.getElementById("box2");
     var box3 = document.getElementById("box3");
     var box4 = document.getElementById("box4");
-    //when click each box button
+
+
+
+    //when click each box button, toggle to extended
+    //box 1
     var buttonBox1 = document.getElementById("button-box1");
-    buttonBox1.onclick = function(){
-      extendBox1.toggle();
+    buttonBox1.onclick = function() {
+      box1.classList.toggle("wide-box");
       box2.toggle();
       box3.toggle();
     };
+    //box 2
     var buttonBox2 = document.getElementById("button-box2");
-    buttonBox2.onclick = function(){
-      extendBox2.toggle();
+    buttonBox2.onclick = function() {
+      box2.classList.toggle("wide-box");
       box3.toggle();
       box4.toggle();
     };
+    //box 3
     var buttonBox4 = document.getElementById("button-box4");
-    buttonBox4.onclick = function(){
-      extendBox4.toggle();
+    buttonBox4.onclick = function() {
+      box4.classList.toggle("wide-box-reverse");
       box2.toggle();
       box3.toggle();
     }
