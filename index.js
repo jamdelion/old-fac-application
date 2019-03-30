@@ -2,38 +2,29 @@
   "use strict";
 
 
-
-
-  HTMLElement.prototype.show = function(){
+  HTMLElement.prototype.show = function() {
     this.style.display = "";
   };
 
-  HTMLElement.prototype.hide = function(){
+  HTMLElement.prototype.hide = function() {
     this.style.display = "none";
   };
 
-  HTMLElement.prototype.toggle = function(){
-    if (this.style.display === "none"){
+
+  HTMLElement.prototype.toggle = function() {
+    if (this.style.display === "none") {
       this.show();
     } else {
       this.hide();
     }
   };
 
-
   //on load
   function init() {
-    var extendBox1 = document.getElementById("box1-extended");
-    var extendBox2 = document.getElementById("box2-extended");
-    var extendBox4 = document.getElementById("box4-extended");
-    extendBox1.hide();
-    extendBox2.hide();
-    extendBox4.hide();
     var box1 = document.getElementById("box1");
     var box2 = document.getElementById("box2");
     var box3 = document.getElementById("box3");
     var box4 = document.getElementById("box4");
-
     //when click each box button, toggle to wide-box
     //box 1
     var buttonBox1 = document.getElementById("button-box1");
