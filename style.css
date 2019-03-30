@@ -245,8 +245,9 @@ p {
   height: 350px;
   padding: 10px;
   display: flex;
-  flex-direction: column;
+  justify-content: flex-end;
   align-items: center;
+  margin-bottom: 20px;
 }
 
 .keyword {
@@ -375,6 +376,8 @@ p {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
+  transition-property: width;
+  transition-duration: 1s;
 }
 
 .hidden {
@@ -382,7 +385,6 @@ p {
 }
 
 .hidden-content {
-  position: absolute;
   width: 570px;
   left: 470px;
 }

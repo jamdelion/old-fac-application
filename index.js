@@ -39,22 +39,36 @@
       setTimeout(() => {
         hiddenText1.classList.toggle('visible');
       }, 750)
-
     };
     //box 2
     var buttonBox2 = document.getElementById("button-box2");
+    var hiddenBox2 = document.getElementById('hiddenBox2');
+    var hiddenText2 = document.getElementById('hidden-text-box2');
     buttonBox2.onclick = function() {
       box2.classList.toggle("wide-box");
+      hiddenBox2.classList.toggle("hidden");
       box3.toggle();
       box4.toggle();
+      setTimeout(() => {
+        hiddenText2.classList.toggle('visible');
+      }, 750)
     };
     //box 3
     var buttonBox4 = document.getElementById("button-box4");
+    var hiddenBox4 = document.getElementById('hiddenBox4');
+    var hiddenText4 = document.getElementById('hidden-text-box4');
     buttonBox4.onclick = function() {
       box4.classList.toggle("wide-box-reverse");
+      hiddenBox4.classList.toggle("hidden");
       box2.toggle();
       box3.toggle();
-    }
+      setTimeout(() => {
+        hiddenText4.classList.toggle('visible');
+      }, 750)
+    };
+    //disable other buttons if one is pressed??? or close the other? If toggled, turn off etc.
+
+
     //test to see if toggling images works - need to cycle round carousel
     var imghold1 = document.getElementById("img-hold-1");
     var nextButton = document.getElementById("next-icon");
