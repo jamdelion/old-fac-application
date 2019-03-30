@@ -229,8 +229,6 @@ p {
   margin-bottom: 20px;
   display: flex;
   align-items: center;
-  transition-property: width;
-  transition-duration: 1s;
 }
 
 .box-content {
@@ -375,7 +373,7 @@ p {
   margin-bottom: 20px;
   display: flex;
   justify-content: flex-end;
-  align-items: flex-end;
+  align-items: flex-start;
   transition-property: width;
   transition-duration: 1s;
 }
