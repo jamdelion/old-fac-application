@@ -35,6 +35,13 @@
       hiddenBox1.classList.toggle("hidden");
       box2.toggle();
       box3.toggle();
+      if (buttonBox1.innerHTML.toLowerCase().includes("see more")) {
+        buttonBox1.innerHTML = "Close X";
+      } else if (buttonBox1.innerHTML.toLowerCase().includes("close")) {
+        buttonBox1.innerHTML = "See More";
+      } else {
+        throw new Error("Unexpected box text: " + buttonBox1.innerHTML);
+      }
       //no idea why setTimeout worked here!
       setTimeout(() => {
         hiddenText1.classList.toggle('visible');
@@ -49,6 +56,13 @@
       hiddenBox2.classList.toggle("hidden");
       box3.toggle();
       box4.toggle();
+      if (buttonBox2.innerHTML.toLowerCase().includes("see more")) {
+        buttonBox2.innerHTML = "Close X";
+      } else if (buttonBox2.innerHTML.toLowerCase().includes("close")) {
+        buttonBox2.innerHTML = "See More";
+      } else {
+        throw new Error("Unexpected box text: " + buttonBox2.innerHTML);
+      }
       setTimeout(() => {
         hiddenText2.classList.toggle('visible');
       }, 750)
@@ -62,6 +76,13 @@
       hiddenBox4.classList.toggle("hidden");
       box2.toggle();
       box3.toggle();
+      if (buttonBox4.innerHTML.toLowerCase().includes("see more")) {
+        buttonBox4.innerHTML = "Close X";
+      } else if (buttonBox4.innerHTML.toLowerCase().includes("close")) {
+        buttonBox4.innerHTML = "See More";
+      } else {
+        throw new Error("Unexpected box text: " + buttonBox4.innerHTML);
+      }
       setTimeout(() => {
         hiddenText4.classList.toggle('visible');
       }, 750)
