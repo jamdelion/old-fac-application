@@ -229,6 +229,8 @@ p {
   margin-bottom: 20px;
   display: flex;
   align-items: center;
+  transition-property: width;
+  transition-duration: 1s;
 }
 
 .box-content {
@@ -361,6 +363,8 @@ p {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
+  transition-property: width;
+  transition-duration: 1s;
 }
 
 .wide-box-reverse {

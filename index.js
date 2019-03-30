@@ -34,18 +34,13 @@
     var box3 = document.getElementById("box3");
     var box4 = document.getElementById("box4");
 
-
-
-    //when click each box button, toggle to extended
+    //when click each box button, toggle to wide-box
     //box 1
     var buttonBox1 = document.getElementById("button-box1");
     var hiddenBox1 = document.getElementById('hiddenBox1');
     buttonBox1.onclick = function() {
-      //box1.classList.toggle("wide-box");
-      box1.style.width = "855px";
-      box1.style.alignItems = "flex-start";
+      box1.classList.toggle("wide-box");
       hiddenBox1.classList.toggle("hidden");
-      //how to toggle off again?
       box2.toggle();
       box3.toggle();
     };
