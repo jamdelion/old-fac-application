@@ -38,11 +38,17 @@
     //box 1
     var buttonBox1 = document.getElementById("button-box1");
     var hiddenBox1 = document.getElementById('hiddenBox1');
+    var hiddenText1 = document.getElementById('hidden-text-box1');
     buttonBox1.onclick = function() {
       box1.classList.toggle("wide-box");
       hiddenBox1.classList.toggle("hidden");
       box2.toggle();
       box3.toggle();
+      //no idea why setTimeout worked here!
+      setTimeout(() => {
+        hiddenText1.classList.toggle('visible');
+      }, 750)
+
     };
     //box 2
     var buttonBox2 = document.getElementById("button-box2");
