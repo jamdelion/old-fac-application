@@ -274,7 +274,6 @@ p {
 
 .button:hover {
   background-color: orange;
-  color: white;
 }
 
 .white {
@@ -315,8 +314,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  /*display: none;*/
-}
+  }
 
 .galleryContainer .slideShowContainer .imageHolder img {
   width: 90%;
@@ -406,7 +404,7 @@ p {
   height: 15px;
   width: 15px;
   display: inline-block;
-  margin: 20px 2px 0px 2px;
+  margin: 20px 2px 20px 2px;
   background-color: white;
   padding: 2px;
   transition: background-color 1s ease;
@@ -436,4 +434,32 @@ p {
 
 #play:hover, #pause:hover {
   color: black;
+}
+
+#fb-icon, #ig-icon, #yt-icon {
+  margin: 5px 5px;
+}
+
+#spank-img {
+  height: 150px;
+  width: auto;
+  background-color: transparent;
+}
+
+#music-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#fb-icon, #ig-icon, #yt-icon {
+  transition-duration: 0.4s;
+}
+
+#fb-icon:hover, #ig-icon:hover, #yt-icon:hover {
+  color: white;
+}
+
+#music-text {
+  margin: 0px 0px 15px 0px;
 }
