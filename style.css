@@ -423,3 +423,17 @@ p {
 .fa-chevron-circle-right, .fa-chevron-circle-left {
   transition: color 1s ease;
 }
+
+.playPause {
+  text-align: center;
+  margin: 10px 10px;
+}
+
+#play, #pause {
+  margin: 5px 5px 0px 5px;
+  transition: color 1s ease;
+}
+
+#play:hover, #pause:hover {
+  color: black;
+}
