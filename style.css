@@ -396,3 +396,30 @@ p {
 .visible {
   opacity: 1;
 }
+
+#dots {
+  text-align: center;
+}
+
+.dot {
+  border-radius: 50%;
+  height: 15px;
+  width: 15px;
+  display: inline-block;
+  margin: 20px 2px 0px 2px;
+  background-color: white;
+  padding: 2px;
+  transition: background-color 1s ease;
+}
+
+.active, .dot:hover {
+  background-color: black;
+}
+
+.fa-chevron-circle-right:hover, .fa-chevron-circle-left:hover {
+  color: black;
+}
+
+.fa-chevron-circle-right, .fa-chevron-circle-left {
+  transition: color 1s ease;
+}
