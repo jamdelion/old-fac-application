@@ -446,7 +446,7 @@ p {
   background-color: transparent;
 }
 
-#music-icons {
+#music-icons, #pod-icons {
   display: flex;
   justify-content: space-around;
   align-items: center;
