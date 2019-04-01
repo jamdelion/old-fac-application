@@ -385,6 +385,11 @@ p {
 .hidden-content {
   width: 570px;
   left: 470px;
+  height: 350px;
+}
+
+#hiddenBox1 {
+  display: flex;
 }
 
 .hidden-text {
@@ -554,4 +559,29 @@ p {
   .spot {
     margin: 10px 0px;
   }
+
+  #second-box {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #about-me-boxes {
+    flex-direction: column;
+  }
+
+  .box {
+    border-right: none;
+  }
+
+  .wide-box, .wide-box-reverse {
+    flex-direction: column;
+    width: 285px;
+  }
+
+  .hidden-content {
+    width: 285px;
+  }
+
 }
