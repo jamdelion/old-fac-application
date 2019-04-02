@@ -71,6 +71,7 @@
     var buttonBox4 = document.getElementById("button-box4");
     var hiddenBox4 = document.getElementById('hiddenBox4');
     var hiddenText4 = document.getElementById('hidden-text-box4');
+    var hiddenText4Box2 = document.getElementById('hidden-text-box4box2');
     buttonBox4.onclick = function() {
       box4.classList.toggle("wide-box-reverse");
       hiddenBox4.classList.toggle("hidden");
