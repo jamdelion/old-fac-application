@@ -30,9 +30,13 @@
     var buttonBox1 = document.getElementById("button-box1");
     var hiddenBox1 = document.getElementById('hiddenBox1');
     var hiddenText1 = document.getElementById('hidden-text-box1');
+    var hiddenText1Box2 = document.getElementById('hidden-text-box1box2');
+    // second text box not appearing currently - change from id to class?
     buttonBox1.onclick = function() {
       box1.classList.toggle("wide-box");
       hiddenBox1.classList.toggle("hidden");
+      hiddenText1.classList.toggle("hidden");
+      hiddenText1Box2.classList.toggle("hidden");
       box2.toggle();
       box3.toggle();
       if (buttonBox1.innerHTML.toLowerCase().includes("see more")) {
@@ -46,6 +50,9 @@
       setTimeout(() => {
         hiddenText1.classList.toggle('visible');
       }, 750)
+      setTimeout(() => {
+        hiddenText1Box2.classList.toggle('visible');
+      }, 950)
     };
     //box 2
     var buttonBox2 = document.getElementById("button-box2");
