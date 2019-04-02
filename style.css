@@ -29,6 +29,10 @@ h3 {
   margin-right: auto;
 }
 
+h4 {
+  font-weight: bold;
+}
+
 a {
   padding: 0.3em;
   text-decoration: none;
@@ -79,6 +83,27 @@ p {
 
 #third-box {
   background-color: lightskyblue;
+  margin-left: 4em;
+  /* margin is width of nav bar */
+}
+
+.why-fac-content {
+  border: solid black;
+  border-radius: 25px;
+  width: 90%;
+  height: 200px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.fac-reason {
+  display: flex;
+  flex-direction: column;
+  /* flex unnecessary? */
+  width: 30%;
 }
 
 #fourth-box {
