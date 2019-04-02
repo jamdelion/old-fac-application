@@ -146,6 +146,7 @@ p {
   animation: fadein 3s;
 }
 
+/* for the subtitle fade-in --> make sure supported in other browsers! */
 @keyframes fadein {
   from {
     opacity: 0;
