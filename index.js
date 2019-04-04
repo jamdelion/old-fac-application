@@ -35,6 +35,7 @@
     buttonBox1.onclick = function() {
       box1.classList.toggle("wide-box");
       hiddenBox1.classList.toggle("hidden");
+      hiddenBox1.classList.toggle("inherit-display");
       hiddenText1.classList.toggle("hidden");
       hiddenText1Box2.classList.toggle("hidden");
       box2.toggle();

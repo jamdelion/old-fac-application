@@ -79,12 +79,11 @@ p {
 /* set minumums for height problem*/
 #second-box {
   background-color: #fca6ca;
+  height: 50vw;
 }
 
 #third-box {
   background-color: lightskyblue;
-  margin-left: 4em;
-  /* margin is width of nav bar */
 }
 
 .why-fac-content {
@@ -159,6 +158,7 @@ p {
   align-items: center;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
 }
 
 #sub-title {
@@ -279,7 +279,6 @@ p {
   width: 285px;
   height: 350px;
   padding: 10px;
-  display: flex;
   justify-content: flex-end;
   align-items: center;
   margin-bottom: 20px;
@@ -424,8 +423,8 @@ p {
   height: 350px;
 }
 
-#hiddenBox1 {
-  display: flex;
+.inherit-display {
+  display: inherit;
 }
 
 .hidden-text {
@@ -448,7 +447,7 @@ p {
 }
 
 #hiddenBox4 {
-  display: flex;
+  display: inherit;
 }
 
 #dots {
