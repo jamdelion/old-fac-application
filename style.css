@@ -31,6 +31,8 @@ h3 {
 
 h4 {
   font-weight: bold;
+  font-size: 25px;
+  padding-bottom: 2%;
 }
 
 a {
@@ -90,7 +92,7 @@ p {
   border: solid black;
   border-radius: 25px;
   width: 90%;
-  height: 200px;
+  padding: 2%;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -103,11 +105,21 @@ p {
   flex-direction: column;
   /* flex unnecessary? */
   width: 30%;
+  padding-bottom: 2%;
+}
+
+.reason-text {
+  line-height: 1.375em;
+  font-family: Lato;
+}
+
+#code-icon {
+  padding-bottom: 2%;
 }
 
 #fourth-box {
   background-color: orange;
-  padding: 0 0 3.4vw 0;
+  padding: 0 100px;
 }
 
 #bottom-box {
@@ -258,8 +270,17 @@ p {
   font-weight: bold;
 }
 
+.keyword {
+  font-family: Titan One;
+  font-size: 30px;
+  color: white;
+  text-shadow: 0 2px 2px black;
+}
+
 .brief-descript {
   text-align: center;
+  line-height: 1.375em;
+  /* font-family: Ubuntu, Arial, sans-serif; */
 }
 
 .box {
@@ -311,6 +332,7 @@ p {
   font-size: 16px;
   transition-duration: 0.4s;
   cursor: pointer;
+  font-family: Ubuntu;
 }
 
 .button:hover {
@@ -527,16 +549,20 @@ p {
   margin: 0px 5px 15px 0px;
   width: 100%;
   font-size: 90%;
+  line-height: 1.375em;
+  font-family: lato;
 }
 
 #coder-text {
   margin: 0px 5px 15px 0px;
   width: 100%;
   font-size: 80%;
+  font-family: lato;
 }
 
 .coder-p {
   padding: 5px 0px;
+  line-height: 1.375em;
 }
 
 
@@ -553,6 +579,9 @@ p {
 .about-me-box-link {
   font-style: italic;
   transition-duration: 0.4s;
+  display: inline-grid;
+  padding: 1px 3px;
+  text-decoration: underline dotted;
 }
 
 .about-me-box-link:hover {
