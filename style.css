@@ -263,6 +263,10 @@ p {
   justify-content: space-between;
 }
 
+#about-me, #why-fac, #images-title {
+  text-shadow: 0 2px 2px white;
+}
+
 #brief-facts {
   display: flex;
   justify-content: center;
