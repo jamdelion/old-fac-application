@@ -258,6 +258,10 @@ p {
   font-weight: bold;
 }
 
+.brief-descript {
+  text-align: center;
+}
+
 .box {
   width: 285px;
   height: 350px;
