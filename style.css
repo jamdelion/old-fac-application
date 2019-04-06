@@ -519,10 +519,20 @@ p {
   margin: 0px 0px 15px 0px;
 }
 
-.pod-text, #coder-text {
+.pod-text {
   margin: 0px 5px 15px 0px;
   width: 100%;
   font-size: 90%;
+}
+
+#coder-text {
+  margin: 0px 5px 15px 0px;
+  width: 100%;
+  font-size: 80%;
+}
+
+.coder-p {
+  padding: 5px 0px;
 }
 
 
