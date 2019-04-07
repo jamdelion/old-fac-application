@@ -298,11 +298,18 @@ ul {
 .box {
   width: 285px;
   height: 350px;
-  border-right: solid black;
   padding: 10px;
   margin-bottom: 20px;
   display: flex;
   align-items: center;
+}
+
+#box1 {
+  border-right: solid black;
+}
+
+#box2 {
+  border-right: solid black;
 }
 
 .box-content {
@@ -316,9 +323,11 @@ ul {
   width: 285px;
   height: 350px;
   padding: 10px;
+  flex-direction: row-reverse;
   justify-content: flex-end;
   align-items: center;
   margin-bottom: 20px;
+  border-left: solid;
 }
 
 .keyword {
@@ -671,7 +680,7 @@ ul {
 
 .tooltip .tooltiptext {
   visibility: hidden;
-  width: 120px;
+  width: 100px;
   background-color: black;
   color: #fff;
   text-align: center;
