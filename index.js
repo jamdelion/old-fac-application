@@ -75,7 +75,7 @@
         hiddenText2.classList.toggle('visible');
       }, 750)
     };
-    //box 3
+    //box 4
     var buttonBox4 = document.getElementById("button-box4");
     var hiddenBox4 = document.getElementById('hiddenBox4');
     var hiddenText4 = document.getElementById('hidden-text-box4');

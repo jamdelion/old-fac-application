@@ -68,6 +68,11 @@ p {
   margin-right: 30px;
 }
 
+ul {
+  list-style-type: disclosure-closed;
+
+}
+
 #main {
   height: 100vw;
   display: flex;
