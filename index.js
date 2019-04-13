@@ -194,6 +194,10 @@
       }
     };
 
+    // dots
+    var dotsArray = document.getElementsByClassName("dot");
+    // initially dots[0] is active
+    dotsArray[i].classList.toggle("active");
 
 
 
