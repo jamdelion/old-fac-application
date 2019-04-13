@@ -121,9 +121,9 @@
     var playIcon = document.getElementById('playIcon');
 
     // Image list
-    images[0] = "images/img1.jpg";
-    images[1] = "images/img2.jpg";
-    images[2] = "images/img3.jpg";
+    images[0] = "images/img1.JPG";
+    images[1] = "images/img2.JPG";
+    images[2] = "images/img3.JPG";
     images[3] = "images/img4.jpg";
     images[4] = "images/img5.jpg";
     // set initial slide to img1
