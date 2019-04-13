@@ -85,6 +85,7 @@
     buttonBox4.onclick = function() {
       box4.classList.toggle("wide-box-reverse");
       hiddenBox4.classList.toggle("hidden");
+      hiddenBox4.classList.toggle("inherit-display");
       box2.toggle();
       box3.toggle();
       if (buttonBox4.innerHTML.toLowerCase().includes("see more")) {
