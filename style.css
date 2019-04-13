@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: Helvetica, Arial, sans-serif;
   cursor: default;
@@ -397,15 +401,27 @@ ul {
   width: 90%;
   height: 90%;
   object-fit: cover;
-}
+} */
 
-#img1 {
+/* #img1 {
   object-position: 0px -223px;
 }
 
-.galleryContainer .slideShowContainer .imageHolder .captionText {
-  display: none;
+#img2 {
+  object-position: 0px -223px;
 }
+
+#img3 {
+  object-position: 0px -223px;
+}
+
+#img4 {
+  object-position: 0px -223px;
+} */
+
+/* .galleryContainer .slideShowContainer .imageHolder .captionText {
+  display: none;
+} */
 
 .imgcarousel {
   display: flex;
