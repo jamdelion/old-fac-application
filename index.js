@@ -1,7 +1,6 @@
 (function() { //good practise to wrap JS in this
   "use strict";
 
-
   HTMLElement.prototype.show = function() {
     this.style.display = "";
   };
@@ -10,7 +9,6 @@
     this.style.display = "none";
   };
 
-
   HTMLElement.prototype.toggle = function() {
     if (this.style.display === "none") {
       this.show();
@@ -18,6 +16,10 @@
       this.hide();
     }
   };
+
+
+
+
 
   //on load
   function init() {
@@ -99,27 +101,112 @@
     //disable other buttons if one is pressed??? or close the other? If toggled, turn off etc.
 
 
-    //test to see if toggling images works - need to cycle round carousel
-    var imghold1 = document.getElementById("img-hold-1");
-    var nextButton = document.getElementById("next-icon");
-    nextButton.onclick = function(){
-      imghold1.toggle();
+
+
+
+
+    // IMAGE CAROUSEL
+    var i = 0;
+    var images = [];
+    var timeLapse = 1000;
+    var slide = document.querySelector(".imageHolder");
+
+    // Buttons
+    var playButton = document.querySelector('.pause');
+    var prevButton = document.querySelector(".prev");
+    var nextButton = document.querySelector(".next");
+    var playIcon = document.getElementById('playIcon');
+
+    // Image list
+    images[0] = "images/img1.jpg";
+    images[1] = "images/img2.jpg";
+    images[2] = "images/img3.jpg";
+    images[3] = "images/img4.jpg";
+    images[4] = "images/img5.jpg";
+    // set initial slide to img1
+    slide.src = images[0];
+
+    // on click play slides
+    playButton.onclick = function() {
+      // does playbutton class contains "play" (true or false)
+      var playing = !playButton.classList.toggle("play");
+      playIcon.classList.toggle("fas");
+      playIcon.classList.toggle("hidden");
+      pauseIcon.classList.toggle("fas");
+      pauseIcon.classList.toggle("hidden");
+      // if "play" not in classlist, playslides (start function)
+      if (playing) {
+        playSlides();
+      }
     }
 
-  }
+    // Automatic play (change images)
+    function playSlides() {
+      if (!playButton.classList.contains("play")) {
+        nextSlide();
+        setTimeout(playSlides, timeLapse);
+      }
+    }
+    // deactivate next/prev buttons? (make grey)
 
+    function nextSlide() {
+      dotsArray[i].classList.toggle("active");
+      if (i < images.length - 1) {
+        i++;
+      } else {
+        i = 0;
+      }
+      slide.src = images[i];
+      dotsArray[i].classList.toggle("active");
+    }
+
+    nextButton.onclick = function() {
+      if (playButton.classList.contains("play")) {
+        nextSlide();
+      }
+    }
+
+    function prevSlide() {
+      dotsArray[i].classList.toggle("active");
+      if (i !== 0) {
+        i--;
+      } else {
+        i = images.length - 1;
+      }
+      slide.src = images[i];
+      dotsArray[i].classList.toggle("active");
+    }
+
+    prevButton.onclick = function() {
+      if (playButton.classList.contains("play")) {
+        prevSlide();
+      }
+    }
+
+    document.onkeydown = function(event) {
+      switch (event.keyCode) {
+        case 37:
+          prevSlide();
+          break;
+        case 39:
+          nextSlide();
+          break;
+      }
+    };
+
+
+
+
+
+
+
+
+
+
+    // end of init function
+  }
 
   //on start , init function executes
   document.addEventListener("DOMContentLoaded", init);
-
-
-
-
-
-  //get element by id etc. display/hidden
-
-
-
-
 
 })();
