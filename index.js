@@ -27,13 +27,22 @@
     var box2 = document.getElementById("box2");
     var box3 = document.getElementById("box3");
     var box4 = document.getElementById("box4");
-    //when click each box button, toggle to wide-box
-    //box 1
+    //box 1 variables
     var buttonBox1 = document.getElementById("button-box1");
     var hiddenBox1 = document.getElementById('hiddenBox1');
     var hiddenText1 = document.getElementById('hidden-text-box1');
     var hiddenText1Box2 = document.getElementById('hidden-text-box1box2');
-    // second text box not appearing currently - change from id to class?
+    //box 2 variables
+    var buttonBox2 = document.getElementById("button-box2");
+    var hiddenBox2 = document.getElementById('hiddenBox2');
+    var hiddenText2 = document.getElementById('hidden-text-box2');
+    // box 4 variables
+    var buttonBox4 = document.getElementById("button-box4");
+    var hiddenBox4 = document.getElementById('hiddenBox4');
+    var hiddenText4 = document.getElementById('hidden-text-box4');
+    var hiddenText4Box2 = document.getElementById('hidden-text-box4box2');
+
+    //when click each box button, toggle to wide-box
     buttonBox1.onclick = function() {
       box1.classList.toggle("wide-box");
       hiddenBox1.classList.toggle("hidden");
@@ -56,11 +65,10 @@
       setTimeout(() => {
         hiddenText1Box2.classList.toggle('visible');
       }, 950)
-    };
+      buttonBox4.classList.toggle("hidden");
+    }
+    // };
     //box 2
-    var buttonBox2 = document.getElementById("button-box2");
-    var hiddenBox2 = document.getElementById('hiddenBox2');
-    var hiddenText2 = document.getElementById('hidden-text-box2');
     buttonBox2.onclick = function() {
       box2.classList.toggle("wide-box");
       hiddenBox2.classList.toggle("hidden");
@@ -76,12 +84,9 @@
       setTimeout(() => {
         hiddenText2.classList.toggle('visible');
       }, 750)
+      buttonBox1.classList.toggle("hidden");
     };
     //box 4
-    var buttonBox4 = document.getElementById("button-box4");
-    var hiddenBox4 = document.getElementById('hiddenBox4');
-    var hiddenText4 = document.getElementById('hidden-text-box4');
-    var hiddenText4Box2 = document.getElementById('hidden-text-box4box2');
     buttonBox4.onclick = function() {
       box4.classList.toggle("wide-box-reverse");
       hiddenBox4.classList.toggle("hidden");
@@ -101,6 +106,7 @@
       setTimeout(() => {
         hiddenText4Box2.classList.toggle('visible');
       }, 950)
+      buttonBox1.classList.toggle("hidden");
     };
     //disable other buttons if one is pressed??? or close the other? If toggled, turn off etc.
 
