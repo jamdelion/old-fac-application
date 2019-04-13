@@ -518,17 +518,19 @@ ul {
   transition: color 1s ease;
 }
 
-.playPause {
-  text-align: center;
+
+#playPause {
+  display: flex;
+  justify-content: center;
   margin: 10px 10px;
 }
 
-#play, #pause {
+#playIcon, #pauseIcon {
   margin: 5px 5px 0px 5px;
   transition: color 1s ease;
 }
 
-#play:hover, #pause:hover {
+#playIcon:hover, #pauseIcon:hover {
   color: black;
 }
 
