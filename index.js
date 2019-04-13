@@ -97,6 +97,9 @@
       setTimeout(() => {
         hiddenText4.classList.toggle('visible');
       }, 750)
+      setTimeout(() => {
+        hiddenText4Box2.classList.toggle('visible');
+      }, 950)
     };
     //disable other buttons if one is pressed??? or close the other? If toggled, turn off etc.
 
