@@ -293,53 +293,27 @@
     </div>
   </section>
 
-      <section>
-        <div id="fourth-box">
-          <h3 id="images-title">
-            Images
-          </h3>
-          <p>This is my fourth section - image carousel</p>
-          <br>
+  <section>
+    <div id="fourth-box">
+      <h3 id="images-title">
+        Images
+      </h3>
 
-          <div class="imgcarousel">
-            <div class="prev">
-              <i class="fas fa-chevron-circle-left fa-4x white" id="prev-icon"></i>
-            </div>
+      <div class="imgcarousel">
+        <div class="prev">
+          <i class="fas fa-chevron-circle-left fa-4x white" id="prev-icon"></i>
+        </div>
 
-            <div class="galleryContainer">
-              <div class="slideShowContainer">
-                <div class="imageHolder" id="img-hold-1">
-                  <img src="images/img1.jpg" id="img1">
-                  <!--use alt tag? -->
-                  <p class="captionText">Caption 1</p>
-                </div>
-                <div class="imageHolder" id="img-hold-2">
-                  <img src="images/img2.jpg" id="img2">
-                  <!--use alt tag? -->
-                  <p class="captionText">Caption 2</p>
-                </div>
-                <div class="imageHolder" id="img-hold-3">
-                  <img src="images/img3.jpg" id="img3">
-                  <!--use alt tag? -->
-                  <p class="captionText">Caption 3</p>
-                </div>
-                <div class="imageHolder" id="img-hold-4">
-                  <img src="images/img4.jpg" id="img4">
-                  <!--use alt tag? -->
-                  <p class="captionText">Caption 4</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="next">
-              <i class="fas fa-chevron-circle-right fa-4x white" id="next-icon"></i>
-            </div>
+        <div class="galleryContainer">
+          <div class="slideShowContainer">
+            <img class="imageHolder" alt="various cute cat images">
           </div>
+        </div>
 
-          <div class="playPause">
-            <i class="fas fa-play fa-2x white" id="play"></i>
-            <i class="fas fa-pause fa-2x white" id="pause"></i>
-          </div>
+        <div class="next">
+          <i class="fas fa-chevron-circle-right fa-4x white" id="next-icon"></i>
+        </div>
+      </div>
 
           <div id="dots">
             <span class="dot" onclick="currentSlide(1)"></span>
@@ -349,23 +323,16 @@
             <span class="dot" onclick="currentSlide(5)"></span>
           </div>
 
-          <div>
-            <a href="#ext-links-title"><i class="fas fa-angle-down fa-4x" id="downward-arrow"></i></a>
-          </div>
-        </div>
-      </section>
+      <div class="pause play" id="playPause">
+        <i class="fas fa-play fa-2x white" id="playIcon"></i>
+        <i class="fa-pause fa-2x white hidden" id="pauseIcon"></i>
+      </div>
 
-      <section>
-        <div id="bottom-box">
-          <div id="ext-links-content">
-            <h3 id="ext-links-title">
-              Links
-            </h3>
-            <nav id="external-links">
-              <div id="ext-links-icons">
-                <a href="https://www.freecodecamp.org/fcc1cb04562-cfcc-4ba2-994f-30d07296d375"><i class="fab fa-free-code-camp fa-3x white" id="freecodecampicon"></i></a>
-                <a href="#"><i class="fab fa-github fa-3x white" id="githubicon"></i></a>
-                <a href="#">
+      <div>
+        <a href="#ext-links-title"><i class="fas fa-angle-down fa-4x" id="downward-arrow"></i></a>
+      </div>
+    </div>
+  </section>
 
                 <!-- SVG...very messy html...not sure what to do about it atm -->
                 <svg version="1.1" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 230 230" style="enable-background:new 0 0 230 230;"
