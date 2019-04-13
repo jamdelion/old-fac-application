@@ -202,6 +202,21 @@
     // initially dots[0] is active
     dotsArray[i].classList.toggle("active");
 
+    // make dots clickable
+    for (var j = 0; j < dotsArray.length; j++) {
+      dotsArray[j].onclick = function(event) {
+        var dotIndex = Array.from(dotsArray).indexOf(event.target);
+        if (playButton.classList.contains("play")) {
+          slide.src = images[dotIndex];
+          // change unclicked dots to not active
+          Array.from(dotsArray).forEach(function(dot) {
+            dot.classList.remove("active")
+          });
+          dotsArray[dotIndex].classList.toggle("active");
+        }
+      }
+    }
+
 
 
 
