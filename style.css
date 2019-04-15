@@ -145,14 +145,6 @@ ul {
   color: white;
 }
 
-#side-underlay {
-  float: left;
-  width: 4em;
-  height: 100vw;
-  top: 0;
-  left: 0;
-}
-
 #side-nav-bar {
   float: left;
   width: 4em;

@@ -229,15 +229,27 @@
     var aboutMe = document.getElementById('about-me');
     var secondBox = document.getElementById("second-box");
     var aboutMeContent = document.getElementById("about-me-content");
+    var whyContent = document.getElementById("why-content");
+    var whyTitle = document.getElementById("why-fac");
+    var imgContent = document.getElementById("img-content");
+    var imgTitle = document.getElementById("images-title");
 
     function uncollapseBox(mobileWidth) {
       if (mobileWidth.matches) { // If media query matches
         aboutMeContent.classList.toggle("hidden");
+        whyContent.classList.toggle("hidden");
+        imgContent.classList.toggle("hidden");
+        // reveal about-me box when click heading
         aboutMe.onclick = function() {
           aboutMeContent.classList.toggle("hidden");
-          // secondBox.classList.toggle("inherit-height");
-          // not working - ID height is overpowering it
-          // work on toggling display of brief facts and about-me boxes
+        }
+        // reveal why-fac box when click heading
+        whyTitle.onclick = function() {
+          whyContent.classList.toggle("hidden");
+        }
+        // reveal image carousel box when click heading
+        imgTitle.onclick = function() {
+          imgContent.classList.toggle("hidden");
         }
       }
     }
