@@ -127,6 +127,10 @@ ul {
   padding-bottom: 2%;
 }
 
+#tags-icon {
+  padding: 6% 36%;
+}
+
 #fourth-box {
   background-color: orange;
   padding: 0 100px;
@@ -564,7 +568,7 @@ ul {
 
 .coder-p {
   padding: 5px 0px;
-  line-height: 1.375em;
+  line-height: 1.5em;
 }
 
 
