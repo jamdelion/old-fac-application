@@ -88,10 +88,10 @@ ul {
   width: 100%;
 }
 
-/* set minumums for height problem*/
+/* set minumums for height problem?*/
 #second-box {
   background-color: #fca6ca;
-  height: 50vw;
+  height: inherit;
 }
 
 #third-box {
@@ -678,7 +678,6 @@ ul {
   margin-left: -130%;
   font-family: Ubuntu;
   font-size: 16px;
-
   /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
   opacity: 0;
   transition: opacity 1s;

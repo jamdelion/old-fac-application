@@ -224,6 +224,26 @@
       }
     }
 
+    var mobileWidth = window.matchMedia("(max-width: 650px)")
+
+    var aboutMe = document.getElementById('about-me');
+    var secondBox = document.getElementById("second-box");
+    var aboutMeContent = document.getElementById("about-me-content");
+
+    function uncollapseBox(mobileWidth) {
+      if (mobileWidth.matches) { // If media query matches
+        aboutMeContent.classList.toggle("hidden");
+        aboutMe.onclick = function() {
+          aboutMeContent.classList.toggle("hidden");
+          // secondBox.classList.toggle("inherit-height");
+          // not working - ID height is overpowering it
+          // work on toggling display of brief facts and about-me boxes
+        }
+      }
+    }
+
+    uncollapseBox(mobileWidth);
+
 
 
 
