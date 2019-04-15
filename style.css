@@ -722,6 +722,7 @@ ul {
     display: flex;
     align-content: center;
     position: fixed;
+    z-index: 1;
   }
 
   .section-links {
@@ -771,6 +772,14 @@ ul {
 
   .box {
     border-right: none;
+  }
+
+  #box1, #box2 {
+    border-right: none;
+  }
+
+  .box4 {
+    border-left: none;
   }
 
   .wide-box, .wide-box-reverse {
