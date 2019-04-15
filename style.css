@@ -787,4 +787,75 @@ ul {
     width: 285px;
   }
 
+  .tooltip .tooltiptext {
+    bottom: -83%;
+    left: 90%;
+    margin-left: -130%;
+  }
+
+  .tooltip .tooltiptext::after {
+    top: -14%;
+    right: 55%;
+    margin-top: -5px;
+    border-color: transparent transparent black;
+  }
+
+  #why-fac, #about-me, #images-title {
+    padding: 6%;
+  }
+
+  .fac-reason {
+    width: 75%;
+    padding-bottom: 7%;
+  }
+
+  .imgcarousel {
+    display: block;
+  }
+  .galleryContainer .slideShowContainer {
+    width: 300px;
+    height: unset;
+  }
+
+  .galleryContainer {
+    max-width: 300px;
+    margin: 6%;
+  }
+
+  .prev, .next {
+    margin: 1% 0%;
+    z-index: 0;
+    position: absolute;
+  }
+
+  .prev {
+    left: 18%;
+    margin-top: 62%;
+  }
+
+  .next {
+    left: 59%;
+    margin-top: -11%;
+  }
+
+  #playPause {
+    margin: -28% 2% 10% 5%;
+    padding-bottom: 8%;
+  }
+
+  #dots {
+    padding-top: 10%;
+  }
+
+  #fourth-box {
+    padding: 0;
+  }
+
+
+
+
+
+
+
+
 }
