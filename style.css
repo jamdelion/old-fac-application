@@ -794,6 +794,14 @@ ul {
     height: 100%;
   }
 
+  #spank-img {
+    height: auto;
+  }
+
+  #music-icons {
+    flex-wrap: wrap;
+  }
+
   .tooltip .tooltiptext {
     bottom: -83%;
     left: 90%;

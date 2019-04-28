@@ -69,8 +69,7 @@
         }, 950)
         // hide other box buttons
         buttonBox4.classList.toggle("invisible");
-      }
-      // };
+      };
       //box 2
       buttonBox2.onclick = function() {
         box2.classList.toggle("wide-box");
@@ -118,8 +117,6 @@
           hiddenBox1.classList.toggle("hidden");
           hiddenText1.classList.toggle("hidden");
           hiddenText1Box2.classList.toggle("hidden");
-          // box2.toggle();
-          // box3.toggle();
           if (buttonBox1.innerHTML.toLowerCase().includes("see more")) {
             buttonBox1.innerHTML = "Close X";
           } else if (buttonBox1.innerHTML.toLowerCase().includes("close")) {
@@ -134,16 +131,12 @@
           setTimeout(() => {
             hiddenText1Box2.classList.toggle('visible');
           }, 950)
-          // hide other box buttons
-          // buttonBox4.classList.toggle("invisible");
+
         }
-        // };
         //box 2
         buttonBox2.onclick = function() {
           box2.classList.toggle("wide-box");
           hiddenBox2.classList.toggle("hidden");
-          // box3.toggle();
-          // box4.toggle();
           if (buttonBox2.innerHTML.toLowerCase().includes("see more")) {
             buttonBox2.innerHTML = "Close X";
           } else if (buttonBox2.innerHTML.toLowerCase().includes("close")) {
@@ -160,8 +153,6 @@
         buttonBox4.onclick = function() {
           box4.classList.toggle("wide-box-reverse");
           hiddenBox4.classList.toggle("hidden");
-          // box2.toggle();
-          // box3.toggle();
           if (buttonBox4.innerHTML.toLowerCase().includes("see more")) {
             buttonBox4.innerHTML = "Close X";
           } else if (buttonBox4.innerHTML.toLowerCase().includes("close")) {
@@ -175,7 +166,6 @@
           setTimeout(() => {
             hiddenText4Box2.classList.toggle('visible');
           }, 950)
-          // buttonBox1.classList.toggle("invisible");
         };
     };
 
