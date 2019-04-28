@@ -443,6 +443,11 @@ ul {
   transition-duration: 1s;
 }
 
+.invisible {
+  opacity: 0;
+  pointer-events: none;
+}
+
 .hidden {
   display: none;
 }
