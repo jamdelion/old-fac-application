@@ -419,7 +419,8 @@ ul {
 }
 
 .wide-box {
-  width: 855px;
+  /* width: 855px; */
+  width: 931px;
   height: 350px;
   border-right: solid black;
   padding: 10px;
@@ -432,7 +433,8 @@ ul {
 }
 
 .wide-box-reverse {
-  width: 855px;
+  /* width: 855px; */
+  width: 931px;
   height: 350px;
   padding: 10px;
   margin-bottom: 20px;
@@ -474,7 +476,7 @@ ul {
 }
 
 .box1-box1 {
-  margin: 0px 15px 0px 0px;
+  margin: 0px 25px 0px 0px;
 }
 
 .visible {

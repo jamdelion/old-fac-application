@@ -199,6 +199,7 @@
     playButton.onclick = function() {
       // does playbutton class contains "play" (true or false)
       var playing = !playButton.classList.toggle("play");
+      // change icon from play to pause icon if slideshow playing
       playIcon.classList.toggle("fas");
       playIcon.classList.toggle("hidden");
       pauseIcon.classList.toggle("fas");
