@@ -786,10 +786,12 @@ ul {
   .wide-box, .wide-box-reverse {
     flex-direction: column;
     width: 285px;
+    height: 100%;
   }
 
   .hidden-content {
     width: 285px;
+    height: 100%;
   }
 
   .tooltip .tooltiptext {

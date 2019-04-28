@@ -20,7 +20,6 @@
 
 
 
-
   //on load
   function init() {
     var box1 = document.getElementById("box1");
@@ -42,74 +41,143 @@
     var hiddenText4 = document.getElementById('hidden-text-box4');
     var hiddenText4Box2 = document.getElementById('hidden-text-box4box2');
 
-    //when click each box button, toggle to wide-box
-    buttonBox1.onclick = function() {
-      box1.classList.toggle("wide-box");
-      hiddenBox1.classList.toggle("hidden");
-      hiddenBox1.classList.toggle("inherit-display");
-      hiddenText1.classList.toggle("hidden");
-      hiddenText1Box2.classList.toggle("hidden");
-      box2.toggle();
-      box3.toggle();
-      if (buttonBox1.innerHTML.toLowerCase().includes("see more")) {
-        buttonBox1.innerHTML = "Close X";
-      } else if (buttonBox1.innerHTML.toLowerCase().includes("close")) {
-        buttonBox1.innerHTML = "See More";
-      } else {
-        throw new Error("Unexpected box text: " + buttonBox1.innerHTML);
+// IF MIN WIDTH = greater than mobile width (desktop), enable wide box toggles
+    var desktopWidth = window.matchMedia("(min-width: 651px)");
+    if (desktopWidth.matches) {
+      //when click each box button, toggle to wide-box
+      buttonBox1.onclick = function() {
+        box1.classList.toggle("wide-box");
+        hiddenBox1.classList.toggle("hidden");
+        hiddenBox1.classList.toggle("inherit-display");
+        hiddenText1.classList.toggle("hidden");
+        hiddenText1Box2.classList.toggle("hidden");
+        box2.toggle();
+        box3.toggle();
+        if (buttonBox1.innerHTML.toLowerCase().includes("see more")) {
+          buttonBox1.innerHTML = "Close X";
+        } else if (buttonBox1.innerHTML.toLowerCase().includes("close")) {
+          buttonBox1.innerHTML = "See More";
+        } else {
+          throw new Error("Unexpected box text: " + buttonBox1.innerHTML);
+        }
+        //no idea why setTimeout worked here!
+        setTimeout(() => {
+          hiddenText1.classList.toggle('visible');
+        }, 750)
+        setTimeout(() => {
+          hiddenText1Box2.classList.toggle('visible');
+        }, 950)
+        // hide other box buttons
+        buttonBox4.classList.toggle("invisible");
       }
-      //no idea why setTimeout worked here!
-      setTimeout(() => {
-        hiddenText1.classList.toggle('visible');
-      }, 750)
-      setTimeout(() => {
-        hiddenText1Box2.classList.toggle('visible');
-      }, 950)
-      // hide other box buttons
-      buttonBox4.classList.toggle("invisible");
-    }
-    // };
-    //box 2
-    buttonBox2.onclick = function() {
-      box2.classList.toggle("wide-box");
-      hiddenBox2.classList.toggle("hidden");
-      box3.toggle();
-      box4.toggle();
-      if (buttonBox2.innerHTML.toLowerCase().includes("see more")) {
-        buttonBox2.innerHTML = "Close X";
-      } else if (buttonBox2.innerHTML.toLowerCase().includes("close")) {
-        buttonBox2.innerHTML = "See More";
-      } else {
-        throw new Error("Unexpected box text: " + buttonBox2.innerHTML);
-      }
-      setTimeout(() => {
-        hiddenText2.classList.toggle('visible');
-      }, 750)
-      buttonBox1.classList.toggle("hidden");
+      // };
+      //box 2
+      buttonBox2.onclick = function() {
+        box2.classList.toggle("wide-box");
+        hiddenBox2.classList.toggle("hidden");
+        box3.toggle();
+        box4.toggle();
+        if (buttonBox2.innerHTML.toLowerCase().includes("see more")) {
+          buttonBox2.innerHTML = "Close X";
+        } else if (buttonBox2.innerHTML.toLowerCase().includes("close")) {
+          buttonBox2.innerHTML = "See More";
+        } else {
+          throw new Error("Unexpected box text: " + buttonBox2.innerHTML);
+        }
+        setTimeout(() => {
+          hiddenText2.classList.toggle('visible');
+        }, 750)
+        buttonBox1.classList.toggle("hidden");
+      };
+      //box 4
+      buttonBox4.onclick = function() {
+        box4.classList.toggle("wide-box-reverse");
+        hiddenBox4.classList.toggle("hidden");
+        hiddenBox4.classList.toggle("inherit-display");
+        box2.toggle();
+        box3.toggle();
+        if (buttonBox4.innerHTML.toLowerCase().includes("see more")) {
+          buttonBox4.innerHTML = "Close X";
+        } else if (buttonBox4.innerHTML.toLowerCase().includes("close")) {
+          buttonBox4.innerHTML = "See More";
+        } else {
+          throw new Error("Unexpected box text: " + buttonBox4.innerHTML);
+        }
+        setTimeout(() => {
+          hiddenText4.classList.toggle('visible');
+        }, 750)
+        setTimeout(() => {
+          hiddenText4Box2.classList.toggle('visible');
+        }, 950)
+        buttonBox1.classList.toggle("invisible");
+      };
+    } else {
+// if min width less than desktopWidth IE MOBILE WIDTH
+        buttonBox1.onclick = function() {
+          box1.classList.toggle("wide-box");
+          hiddenBox1.classList.toggle("hidden");
+          hiddenText1.classList.toggle("hidden");
+          hiddenText1Box2.classList.toggle("hidden");
+          // box2.toggle();
+          // box3.toggle();
+          if (buttonBox1.innerHTML.toLowerCase().includes("see more")) {
+            buttonBox1.innerHTML = "Close X";
+          } else if (buttonBox1.innerHTML.toLowerCase().includes("close")) {
+            buttonBox1.innerHTML = "See More";
+          } else {
+            throw new Error("Unexpected box text: " + buttonBox1.innerHTML);
+          }
+          //no idea why setTimeout worked here!
+          setTimeout(() => {
+            hiddenText1.classList.toggle('visible');
+          }, 750)
+          setTimeout(() => {
+            hiddenText1Box2.classList.toggle('visible');
+          }, 950)
+          // hide other box buttons
+          // buttonBox4.classList.toggle("invisible");
+        }
+        // };
+        //box 2
+        buttonBox2.onclick = function() {
+          box2.classList.toggle("wide-box");
+          hiddenBox2.classList.toggle("hidden");
+          // box3.toggle();
+          // box4.toggle();
+          if (buttonBox2.innerHTML.toLowerCase().includes("see more")) {
+            buttonBox2.innerHTML = "Close X";
+          } else if (buttonBox2.innerHTML.toLowerCase().includes("close")) {
+            buttonBox2.innerHTML = "See More";
+          } else {
+            throw new Error("Unexpected box text: " + buttonBox2.innerHTML);
+          }
+          setTimeout(() => {
+            hiddenText2.classList.toggle('visible');
+          }, 750)
+          buttonBox1.classList.toggle("hidden");
+        };
+        //box 4
+        buttonBox4.onclick = function() {
+          box4.classList.toggle("wide-box-reverse");
+          hiddenBox4.classList.toggle("hidden");
+          // box2.toggle();
+          // box3.toggle();
+          if (buttonBox4.innerHTML.toLowerCase().includes("see more")) {
+            buttonBox4.innerHTML = "Close X";
+          } else if (buttonBox4.innerHTML.toLowerCase().includes("close")) {
+            buttonBox4.innerHTML = "See More";
+          } else {
+            throw new Error("Unexpected box text: " + buttonBox4.innerHTML);
+          }
+          setTimeout(() => {
+            hiddenText4.classList.toggle('visible');
+          }, 750)
+          setTimeout(() => {
+            hiddenText4Box2.classList.toggle('visible');
+          }, 950)
+          // buttonBox1.classList.toggle("invisible");
+        };
     };
-    //box 4
-    buttonBox4.onclick = function() {
-      box4.classList.toggle("wide-box-reverse");
-      hiddenBox4.classList.toggle("hidden");
-      hiddenBox4.classList.toggle("inherit-display");
-      box2.toggle();
-      box3.toggle();
-      if (buttonBox4.innerHTML.toLowerCase().includes("see more")) {
-        buttonBox4.innerHTML = "Close X";
-      } else if (buttonBox4.innerHTML.toLowerCase().includes("close")) {
-        buttonBox4.innerHTML = "See More";
-      } else {
-        throw new Error("Unexpected box text: " + buttonBox4.innerHTML);
-      }
-      setTimeout(() => {
-        hiddenText4.classList.toggle('visible');
-      }, 750)
-      setTimeout(() => {
-        hiddenText4Box2.classList.toggle('visible');
-      }, 950)
-      buttonBox1.classList.toggle("invisible");
-    };
-    //disable other buttons if one is pressed??? or close the other? If toggled, turn off etc.
 
 
 
@@ -225,7 +293,7 @@
       }
     }
 
-    var mobileWidth = window.matchMedia("(max-width: 650px)")
+    var mobileWidth = window.matchMedia("(max-width: 650px)");
 
     var aboutMe = document.getElementById('about-me');
     var secondBox = document.getElementById("second-box");
