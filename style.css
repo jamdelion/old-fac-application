@@ -32,6 +32,7 @@ h3 {
   align-items: center;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
 }
 
 h4 {
@@ -107,7 +108,7 @@ ul {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  margin-left: auto;
+  margin-left: 8%;
   margin-right: auto;
 }
 
@@ -681,7 +682,7 @@ ul {
   margin-left: -130%;
   font-family: Ubuntu;
   font-size: 16px;
-  /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+  /* Fade in tooltip (opacity) */
   opacity: 0;
   transition: opacity 1s;
 }
