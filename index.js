@@ -175,7 +175,7 @@
 
 
     // IMAGE CAROUSEL
-    var i = 0;
+    var slideIndex = 0;
     var images = [];
     var timeLapse = 1000;
     var slide = document.querySelector(".imageHolder");
@@ -194,6 +194,33 @@
     images[4] = "images/img5.jpg";
     // set initial slide to img1
     slide.src = images[0];
+
+
+    // dots
+    // get array of dot elements
+    var dotsArray = document.getElementsByClassName("dot");
+    // initially dots[0] is active
+    // if playing, slideIndex dot is active (follows slideIndex)
+    dotsArray[slideIndex].classList.toggle("active");
+
+    // make dots clickable
+    for (var j = 0; j < dotsArray.length; j++) {
+      dotsArray[j].onclick = function(event) {
+        // if the carousel not playing, change the image to the same index as the dot
+        var dotIndex = Array.from(dotsArray).indexOf(event.target);
+        if (playButton.classList.contains("play")) {
+          slide.src = images[dotIndex];
+          // match the slideIndex with the dotIndex
+          slideIndex = dotIndex;
+          // change unclicked dots to not active
+          Array.from(dotsArray).forEach(function(dot) {
+            dot.classList.remove("active")
+          });
+          dotsArray[dotIndex].classList.toggle("active");
+        }
+      }
+    }
+
 
     // on click play slides
     playButton.onclick = function() {
@@ -220,14 +247,19 @@
     // deactivate next/prev buttons? (make grey)
 
     function nextSlide() {
-      dotsArray[i].classList.toggle("active");
-      if (i < images.length - 1) {
-        i++;
+      // change unclicked dots to not active
+      Array.from(dotsArray).forEach(function(dot) {
+        dot.classList.remove("active")
+      });
+      // active dot
+      // dotsArray[i].classList.toggle("active");
+      if (slideIndex < images.length - 1) {
+        slideIndex++;
       } else {
-        i = 0;
+        slideIndex = 0;
       }
-      slide.src = images[i];
-      dotsArray[i].classList.toggle("active");
+      slide.src = images[slideIndex];
+      dotsArray[slideIndex].classList.toggle("active");
     }
 
     nextButton.onclick = function() {
@@ -237,14 +269,14 @@
     }
 
     function prevSlide() {
-      dotsArray[i].classList.toggle("active");
-      if (i !== 0) {
-        i--;
+      dotsArray[slideIndex].classList.toggle("active");
+      if (slideIndex !== 0) {
+        slideIndex--;
       } else {
-        i = images.length - 1;
+        slideIndex = images.length - 1;
       }
-      slide.src = images[i];
-      dotsArray[i].classList.toggle("active");
+      slide.src = images[slideIndex];
+      dotsArray[slideIndex].classList.toggle("active");
     }
 
     prevButton.onclick = function() {
@@ -264,25 +296,7 @@
       }
     };
 
-    // dots
-    var dotsArray = document.getElementsByClassName("dot");
-    // initially dots[0] is active
-    dotsArray[i].classList.toggle("active");
 
-    // make dots clickable
-    for (var j = 0; j < dotsArray.length; j++) {
-      dotsArray[j].onclick = function(event) {
-        var dotIndex = Array.from(dotsArray).indexOf(event.target);
-        if (playButton.classList.contains("play")) {
-          slide.src = images[dotIndex];
-          // change unclicked dots to not active
-          Array.from(dotsArray).forEach(function(dot) {
-            dot.classList.remove("active")
-          });
-          dotsArray[dotIndex].classList.toggle("active");
-        }
-      }
-    }
 
     var mobileWidth = window.matchMedia("(max-width: 650px)");
 
