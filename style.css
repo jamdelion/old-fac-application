@@ -522,7 +522,10 @@ ul {
 #playPause {
   display: flex;
   justify-content: center;
+  /* ADJUST THIS to %??? */
   margin: 10px 10px;
+  position: relative;
+  z-index: 999999999;
 }
 
 #playIcon, #pauseIcon {
@@ -590,7 +593,7 @@ ul {
   display: inline-block;
   padding: 2px;
   background-color: black;
-  margin: 3px 12px;
+  margin: 0.5% 2%;
 }
 
 .about-me-box-link {
@@ -762,11 +765,12 @@ ul {
   #brief-facts {
     text-align: center;
     padding: 0px 0px 40px 0px;
+    width: 99%;
   }
 
-  .spot {
+  /* .spot {
     margin: 10px 0px;
-  }
+  } */
 
   #second-box {
     text-align: center;
@@ -833,7 +837,8 @@ ul {
   }
 
   .imgcarousel {
-    display: block;
+    /* display: block; */
+    /* padding-bottom: 12%; */
   }
   .galleryContainer .slideShowContainer {
     width: 300px;
@@ -842,29 +847,18 @@ ul {
 
   .galleryContainer {
     max-width: 300px;
-    margin: 6%;
+    /* margin: 6%; */
   }
 
-  .prev, .next {
-    margin: 1% 0%;
-    z-index: 0;
-    position: absolute;
+  #fourth-box {
+    padding: 0;
   }
 
-  .prev {
-    left: 18%;
-    margin-top: 62%;
-  }
+/* end of phone size media query */
+}
 
-  .next {
-    left: 59%;
-    margin-top: -11%;
-  }
 
-  #playPause {
-    margin: -28% 2% 10% 5%;
-    padding-bottom: 8%;
-  }
+
 
 
 /* Remove borders when less than 4 about-me boxes across */
@@ -876,6 +870,25 @@ ul {
   #box4 {
     border-left: none;
   }
+}
+
+/* for vertically collapsing about-me boxes */
+/* @media only screen and (max-width: 1028px) and (min-width : 651px){
+
+    #second-box {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    } */
+
+    /* #about-me-boxes {
+      flex-direction: column;
+    } */
+
+    /* .box {
+      border-right: none;
+    }
 
     #box1, #box2 {
       border-right: none;
@@ -885,7 +898,17 @@ ul {
       border-left: none;
     } */
 
+    /* .wide-box, .wide-box-reverse { */
+      /* flex-direction: column; */
+      /* width: 285px;
+      height: 100%;
+    }
 
+    .hidden-content {
+      width: 285px;
+      height: 100%;
+    }
+} */
 
 
 /* For tablet devices such as iphones/small laptops */
