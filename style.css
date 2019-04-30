@@ -64,7 +64,7 @@ svg:hover path {
   fill: orange;
 }
 
-/* this scroll will not work on iOS on movile, or IE/Edge/Safari..fix? */
+/* this scroll will not work on iOS on mobile, or IE/Edge/Safari..fix? */
 html {
   scroll-behavior: smooth;
 }
@@ -90,7 +90,6 @@ ul {
   height: 150%;
 }
 
-/* set minumums for height problem?*/
 #second-box {
   background-color: #fca6ca;
   height: inherit;
@@ -115,7 +114,6 @@ ul {
 .fac-reason {
   display: flex;
   flex-direction: column;
-  /* flex unnecessary? */
   width: 30%;
   padding-bottom: 2%;
 }
@@ -161,7 +159,6 @@ ul {
 
 #side-bar-links {
   top: 16%;
-  /*-delete this? */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -192,7 +189,7 @@ ul {
   font-size: 25px;
 }
 
-/* for the subtitle fade-in --> make sure supported in other browsers! */
+/* for the subtitle fade-in --> supported in other browsers? */
 @keyframes fadein {
   from {
     opacity: 0;
@@ -298,7 +295,6 @@ ul {
 .brief-descript {
   text-align: center;
   line-height: 1.375em;
-  /* font-family: Ubuntu, Arial, sans-serif; */
 }
 
 .box {
@@ -522,7 +518,6 @@ ul {
 #playPause {
   display: flex;
   justify-content: center;
-  /* ADJUST THIS to %??? */
   margin: 10px 10px;
   position: relative;
   z-index: 999999999;
@@ -647,7 +642,7 @@ ul {
   box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,.4);
 }
 
-/* Create the checkmark/indicator (hidden when not checked) */
+/* Create the checkmark (hidden when not checked) */
 .checkmark:after {
   content: "";
   position: absolute;
@@ -768,10 +763,6 @@ ul {
     width: 99%;
   }
 
-  /* .spot {
-    margin: 10px 0px;
-  } */
-
   #second-box {
     text-align: center;
     display: flex;
@@ -871,44 +862,8 @@ ul {
     border-left: none;
   }
 }
+/* End */
 
-/* for vertically collapsing about-me boxes */
-/* @media only screen and (max-width: 1028px) and (min-width : 651px){
-
-    #second-box {
-      text-align: center;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    } */
-
-    /* #about-me-boxes {
-      flex-direction: column;
-    } */
-
-    /* .box {
-      border-right: none;
-    }
-
-    #box1, #box2 {
-      border-right: none;
-    }
-
-    .box4 {
-      border-left: none;
-    } */
-
-    /* .wide-box, .wide-box-reverse { */
-      /* flex-direction: column; */
-      /* width: 285px;
-      height: 100%;
-    }
-
-    .hidden-content {
-      width: 285px;
-      height: 100%;
-    }
-} */
 
 
 /* For tablet devices such as iphones/small laptops */
@@ -926,3 +881,4 @@ ul {
   }
 
 }
+/* End of tablet media query */
